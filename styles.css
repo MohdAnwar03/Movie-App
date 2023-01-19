@@ -1,31 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: 10px;
-  }
+  } 
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+   /* Track  */
+   ::-webkit-scrollbar-track {
     background: transparent;
   }
-  
+   
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+   ::-webkit-scrollbar-thumb {
     background-color: #373c75;
     border-radius: 5px;
-  }
+  } 
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+   ::-webkit-scrollbar-thumb:hover {
     background: #373c80;
-  }
-
+  } 
+  
 
 body {
-    background-color: #22254b;
+   
+    width: 100%;
+    background-color: #eee;
     font-family: "Poppins", sans-serif;
     margin: 0;
 }
@@ -50,12 +54,13 @@ header {
     font-weight: 100;
     letter-spacing: 1px;
     font-size: 16px;
+    color: #000000;
 }
 .search {
     background-color: transparent;
     border: 2px solid #22254b;
     border-radius: 50px;
-    color: #fff;
+    color: #eee;
     font-family: inherit;
     font-size: 1rem;
     padding: 0.5rem 1rem;
@@ -71,8 +76,14 @@ header {
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
+   margin-left:15px ;
+    /* display: grid;
+   place-items: center;
+   grid-template-columns: auto auto auto auto;
+   */
+   display: flex;
+   flex-wrap: wrap;
+   
 }
 
 .movie {
@@ -82,7 +93,7 @@ main {
     overflow: hidden;
     position: relative;
     margin: 1rem;
-    width: 300px;
+    width: 280px;
 }
 
 .movie img {
@@ -121,7 +132,7 @@ main {
 }
 
 #search_res {
-    padding: 0px 20px;
-    color: #fff;
+    /* padding: 0px 20px; */
+    color: #000000;
     letter-spacing: 1px;
 }
